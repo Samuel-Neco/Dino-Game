@@ -1,0 +1,46 @@
+.body {
+    background: #00CED1;
+}
+
+
+.ovelha{
+    width: 60px;
+    height: 60px;
+    background-image: url(ovelha.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.cerca {
+    position: absolute;
+    width: 60px;
+    height: 36px;
+    bottom: 0;
+    background-image: url(cerca.png);
+}
+
+.game-over {
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: arial;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url(background.jpg);
+    background-repeat: repeat-x;
+    animation: slideright 4200s infinite linear;
+    width: 100%;
+    height: 160px;
+}
